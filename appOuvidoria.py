@@ -58,7 +58,7 @@ while True:
         codigoExclusao = int(input("Digite o código da reclamação que deseja excluir: "))
 
         #SE o número for menor ou maior que a lista
-        if codigoExclusao < len(reclamacoes) or codigoExclusao > len(reclamacoes):
+        if codigoExclusao < 1 or codigoExclusao > len(reclamacoes):
             print("\nCódigo inválido.\n")
 
         #SE o número for válido
@@ -83,7 +83,7 @@ while True:
             codigoVerificacao = int(input("Digite o código da reclamação que deseja verificar: "))
 
             #SE o código de verificação for menor ou maior que o tamanho da lista o código vai ser inválido
-            if codigoVerificacao < len(reclamacoes) or codigoVerificacao > len(reclamacoes):
+            if codigoVerificacao < 1 or codigoVerificacao > len(reclamacoes):
                 print("\nCódigo inválido\n")
 
             #SE for um código válido ele vai mostrar o nome do usuário, assunto e a reclamação
